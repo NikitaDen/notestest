@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter, {RouteConfig} from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/Home/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -13,7 +13,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/:id',
     name: 'Edit',
-    component: () => import('../views/Edit.vue')
+    component: () => import('../views/Edit/Edit.vue')
   }
 ]
 

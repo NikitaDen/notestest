@@ -1,10 +1,10 @@
 <template>
   <div class="backdrop">
     <form class="form" @submit.prevent="$emit('addItemInForm', title)">
-      <button class="button button--close" @click="$emit('closeForm')">X</button>
+      <button class="button button--close" @click="$emit('closeForm')"></button>
       <label for="title">Title</label>
-      <input id="title" type="text" v-model="title">
-      <input type="submit" value="Add">
+      <input ref="title" id="title" class="input" type="text" v-model="title">
+      <button class="button button--add"></button>
     </form>
   </div>
 </template>
@@ -16,10 +16,13 @@
       return {
         title: ''
       }
+    },
+    mounted() {
+      this.$refs.title.focus();
     }
   }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+  @import "form";
 </style>

@@ -1,0 +1,51 @@
+.buttons-group--interactions {
+  border-radius: .35rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  margin: 1rem auto;
+  padding: .35rem .75rem;
+  box-shadow: 0 1px 10px 0 rgba(32, 33, 36, .28);
+
+  .button {
+    margin: 0;
+  }
+
+  .button--undo {
+    background: url("../../assets/images/undo.svg") no-repeat center;
+    background-size: 70%;
+  }
+  .button--redo {
+    background: url("../../assets/images/redo.svg") no-repeat center;
+    background-size: 70%;
+  }
+}
+
+.edit-form {
+  width: 35%;
+  min-width: 320px;
+  margin: 0 auto;
+
+  .buttons-group {
+    margin-top: 1rem;
+  }
+
+  .input--title {
+    width: 100%;
+    margin: .75rem 0;
+  }
+
+  .button--add {
+    margin-bottom: 0;
+  }
+
+  hr {
+    margin: 1rem 0;
+  }
+}
+
+h3 {
+  padding: .5rem 0;
+  text-align: left;
+}

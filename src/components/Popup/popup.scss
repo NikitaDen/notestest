@@ -1,0 +1,26 @@
+.popup {
+  position: fixed;
+  top: -8rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(93, 232, 169);
+  padding: .5rem 1rem;
+  border-radius: .35rem;
+  z-index: 100;
+
+  &.showPopup {
+    animation: showPopup 3s;
+
+    @keyframes showPopup {
+      0% {
+        top: -4rem;
+      }
+      30%, 70% {
+        top: 3rem;
+      }
+      100% {
+        top: -4rem;
+      }
+    }
+  }
+}

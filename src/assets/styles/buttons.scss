@@ -1,0 +1,65 @@
+.button {
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: .5;
+  }
+}
+
+.button--delete, .button--edit, .button--undo, .button--redo, .button--close {
+  border-radius: 50%;
+  position: relative;
+  height: 1.75rem;
+  width: 1.75rem;
+  transition: .2s;
+
+  &:hover {
+    box-shadow: 0 1px 10px 0 rgba(32, 33, 36, .28);
+  }
+}
+
+.button--confirm, .button--refuse, .button--save, .button--cancel {
+  position: relative;
+  border-radius: .35rem;
+  border: 1px solid rgba(32, 33, 36, .28);
+  padding: .2rem .75rem;
+  margin: 0 1rem;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .5s;
+  }
+
+  &:hover {
+    border-color: white;
+    color: white;
+
+    &::before {
+      width: 170px;
+      height: 170px;
+    }
+  }
+}
+
+.button--confirm, .button--save {
+  &::before {
+    background-color: #42b983;
+  }
+}
+.button--refuse, .button--cancel {
+  &::before {
+    background-color: #C0474B;
+  }
+}
