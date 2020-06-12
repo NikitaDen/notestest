@@ -15,17 +15,19 @@
 
     input[type=checkbox] {
       opacity: 0;
+      cursor: pointer;
     }
 
     input[type=checkbox]:checked ~ label > .checked {
       display: inline-block;
       border-radius: 50%;
-      height: .85rem;
-      width: .85rem;
-      background-color: #00BCD4;
+      height: 1.35rem;
+      width: 1.35rem;
+      background-size: contain;
+      background: url("./../../assets/images/done.svg") no-repeat center;
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 40%;
+      left: 75%;
       transform: translate(-50%, -50%);
     }
 
@@ -34,11 +36,10 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 1.25rem;
-      height: 1.25rem;
+      width: 1rem;
+      height: 1rem;
       border-radius: 50%;
       background-color: white;
-      overflow: hidden;
     }
 
     .checked {

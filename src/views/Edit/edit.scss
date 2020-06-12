@@ -1,3 +1,26 @@
+.edit-form {
+  width: 35%;
+  min-width: 320px;
+  margin: 0 auto;
+
+  .buttons-group {
+    margin-top: 1rem;
+  }
+
+  .input--title {
+    width: 100%;
+    margin: .75rem 0;
+  }
+
+  .button--add {
+    margin-bottom: 0;
+  }
+
+  hr {
+    margin: 1rem 0;
+  }
+}
+
 .buttons-group--interactions {
   border-radius: .35rem;
   display: flex;
@@ -19,29 +42,6 @@
   .button--redo {
     background: url("../../assets/images/redo.svg") no-repeat center;
     background-size: 70%;
-  }
-}
-
-.edit-form {
-  width: 35%;
-  min-width: 320px;
-  margin: 0 auto;
-
-  .buttons-group {
-    margin-top: 1rem;
-  }
-
-  .input--title {
-    width: 100%;
-    margin: .75rem 0;
-  }
-
-  .button--add {
-    margin-bottom: 0;
-  }
-
-  hr {
-    margin: 1rem 0;
   }
 }
 
